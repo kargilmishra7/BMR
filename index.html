@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>..CALORIE TRACKER..</h1>
+        <h2>Enter your everyday food calorie intake per unit and find out your total 
+            calorie consumption and hence compare it with standard calorie intake using your BMR. </h2>
+        <div class="clearfix">
+            <div class="box">
+           <form id="frm2" >
+            <p id="id1" style="font-size: 1.2em">Enter the required data to find out the standard calorie requirement . </p>
+            <br><label for="age">AGE</label>
+            <br><input type="number" name="AGE" id="age" >
+            <br><br>
+            GENDER<br>
+            <input type="radio" name="GENDER" id="gender" value="Male">
+            <label for="gender">Male</label>
+            <input type="radio" name="GENDER" id="gender" value="Female">
+            <label for="gender">Female</label>
+            <input type="radio" name="GENDER" id="gender" value="Others ">
+            <label for="gender">Others</label>
+            <br><br>
+            <label for="weight">WEIGHT</label name="WEIGHT">
+            <br><input type="number" name="WEIGHT" id="weight"> kg
+            <br><br>
+            <label for="height">HEIGHT</label>
+            <br><input type="number" name="HEIGHT" id="height"> cm
+            <br><br>
+            <div class="c3" onclick="calbmr()">CALCULATE</div>
+            <br><div id="print"></div>
+            
+            </form>              
+            </div>
+            <div class="box" id="content" >
+                
+                <ul id="foodlist">
+                    <li>Food Item - Total Calories</li>
+                </ul>
+                <div id="id2"></div>
+            </div>
+        
+            <div class="box">
+            <form id="frm1">
+             <br><br><label for="Name">NAME OF THE FOOD:</label>
+            <br><input type="text" id="Name" name="NAME" >
+            <br><br><label for="Quantity">QUANTITY</label>
+            <br><input type="number" id="Quantity" name="QUANT">
+            <br><br><label for="CAL">CALORIE</label>
+            <br><input id="CAL" name="cals" type="number">cal/unit
+            <br><br><div class="c1" onclick="caloriein()" >ADD</div>
+            <br>Click submit after adding all the food items.<br><br>
+            <div class="c2" onclick="output()" >SUBMIT</div>
+            
+            </form>
+            </div>
+        </div>
+        <h3 id="end">"Today more than <span>95%</span> of all chronic diseases is caused by <span><strong><u>FOOD CHOICES</u></strong></span>
+            ,toxic food ingredients,nutritional deficiancies and <em>LACK OF PHYSICAL EXERCISE</em>" -Mike Adams
+        </h3>
+        <div class="copy"><strong>© Copyrights Kargil Mishra</strong></div>
+       
+
+        
+        <script src="script.js"></script>
+    </body>
+</html>

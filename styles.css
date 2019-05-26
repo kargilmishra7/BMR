@@ -1,0 +1,115 @@
+body{
+
+    background-image: url("Images/bg-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+
+*{
+    box-sizing:border-box;
+}
+
+h1{
+    padding: 20px;
+    background-color: #0D47A1;
+    color:white;
+    text-align: center;
+    width:100%;
+    border:2px solid darkblue;
+    border-bottom:5px solid black;
+    border-radius:5px;
+    font-family: 'Righteous', cursive;
+
+
+}
+
+h2{
+    width:100%;
+    margin:auto;
+    border:2px solid black;
+    outline-style:solid;
+    outline-color:black;
+    outline-width: 3px;
+    outline-offset: 2px;
+    color:white;
+    text-align: center;
+    background-color: #1E88E5;
+
+}
+.box{
+    float:left;
+    width:33.33%;
+    padding:5px;
+}
+.clearfix::after{
+    content: "";
+    clear:both;
+    display:table;
+}
+ #frm1{
+     background-color: aquamarine;
+     padding:20px;
+     margin-top: 20px;
+     height:450px;
+     color: aliceblue;
+     background-image:url("Images/new-2.jpg");
+    opacity: 0.8;
+    background-size:cover;
+    
+ }
+#frm2{
+    background-color: aquamarine;
+    padding:20px;
+    margin-top: 20px;
+    height:450px;
+    background-image:url("Images/bmr-2.jpg");
+    opacity: 0.8;
+    background-size:cover;
+    color: aliceblue;
+     
+    
+}
+#content{
+    
+    padding:20px;
+    margin-top: 25px;
+    height:450px;
+    background-image:url("Images/food-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    padding-left: 150px;
+    opacity: 0.8;
+    font-size: 1.2em;
+}
+
+.c1,.c2,.c3{
+    background-color: darkcyan;
+    color:black;
+    cursor: pointer;
+    padding:5px 5px;
+    border:2px solid darkblue;
+    text-decoration: none;
+    width:110px;
+    text-align: center;
+    border-radius: 15px;
+
+}
+#end{
+    background-color:gray;
+    color:black;
+    border:2px solid black;
+    padding:15px;
+
+}
+span{
+    color: red;
+}
+.copy{
+    text-align: center;
+    color:black;
+}
+    
