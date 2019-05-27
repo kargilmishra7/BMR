@@ -38,10 +38,10 @@ function caloriein()
         
 	    document.getElementById("id2").innerHTML= "Your total calorie consumtion for today is "+totcal+" cal.";
 
-        totcal=0;
+       
     
        }
-     
+       
        
     
 
