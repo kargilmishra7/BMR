@@ -112,4 +112,9 @@ span{
     text-align: center;
     color:black;
 }
+@media screen and (max-width:600px){
+    .box{
+        width:100%;
+    }
+}
     
