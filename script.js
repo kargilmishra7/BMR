@@ -1,5 +1,18 @@
+var BMR;
 function calbmr()
-{
+{    var x;
+    x = document.getElementById("age").value;
+    if ( x < 1 || x > 120) 
+     { document.getElementById("print").innerHTML="Input Invalid! Try again.";
+     document.getElementById("age").value="";
+     document.getElementById("gender").value="";
+     document.getElementById("weight").value="";
+     document.getElementById("height").value="";
+    
+    }
+    
+    else 
+    {
     var age=document.getElementById("age").value;
     var gender=document.getElementById("gender").value;
     var weight=document.getElementById("weight").value;
@@ -12,8 +25,8 @@ function calbmr()
     else{
         BMR=(10*weight)+(6.25*height)-(5*age)-161;
     }
-    document.getElementById("print").innerHTML="BMR value is :"+BMR+" cal.";
-   
+    document.getElementById("print").innerHTML=BMR;}
+
 }
 var totcal=0;
 function caloriein()
@@ -32,16 +45,23 @@ function caloriein()
    }
 
 
-      
+       
        function output()
        {
         
-	    document.getElementById("id2").innerHTML= "Your total calorie consumtion for today is "+totcal+" cal.";
+        document.getElementById("id2").innerHTML= "Your total calorie consumtion for today is "+totcal+" cal.";
+        var alert =document.getElementById("print").innerHTML;
+        if(alert < totcal)
+        {document.getElementById("warning").innerHTML=" ALERT:You've exceeded your standard daily consumption of calories.";}
+        else{
+            document.getElementById("warning").innerHTML="ALERT:You're yet to meet your standard daily expected calorie consumption." ;
+        }
+        
+        }
 
        
     
-       }
-       
+      
        
     
 
